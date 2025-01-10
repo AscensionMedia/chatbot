@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ conversation_history = [
 ]
 
 # Define an API Key for authorization
-API_KEY = "969ab78d566821e71195753781fe2c91805aa1285d0587c7ba1a2a78d38178b"
+API_KEY = ""
 
 @app.route("/")
 def home():
